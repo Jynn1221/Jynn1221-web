@@ -1,0 +1,117 @@
+body {  font-family: 'Noto Sans KR', 'Gaegu';   }
+
+/* 폰트 */
+h1 {  font-family: 'Gaegu', bold;   }
+h2 {  font-family: 'Gaegu', bold;   }
+h3 {  font-family: 'Gaegu', bold;   }
+h4 {  font-family: 'Gaegu', bold;   }
+
+/* 0. 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #719C6D !important;
+}
+
+
+/* 1. 헤더 영역 */
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(Images/Main/main_baner1.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* 2. 바로가기 영역 */
+#Shortcuts {
+    background-image: url(Images/LineBackground1-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-decoration-color: #705434;
+}
+
+/* 3. 도시새 영역 */
+#Citybird{
+    background-image: url(Images/Main/main_Background1.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.img-wrapper {
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+}
+
+.img-wrapper img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}
+
+
+/* 4. 탐조란? 영역 */
+
+/*5. 탐조 글 영역 */
+#Birdphoto {
+    background-image: url(Images/Main/main_Background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-wrapper {
+    /*원근감을 위해 perspective 사용합니다.*/
+    perspective : 1200px;
+  }
+  
+  .card {
+    position : relative;
+    width:100%;
+    height: 100%;
+    /* 3d-효과를 주기위해 사용
+     속성이 있어야 반대 카드가 보입니다. */
+    transform-style: preserve-3d;
+    transition : all 0.5s;
+    cursor: pointer;  
+  }
+  
+  .card-front, .card-back{
+    /* 앞면과 뒷면 카드를 겹침*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color : white;
+    font-weight: bold;
+  }
+  
+  .card-back {
+    background-color: #705434;
+    /* 뒷면의 카드를 180도 회전시킵니다.*/
+    /* 뒷면의 카드의 경우 
+    뒤쪽에 위치해야 되기 때문입니다.*/
+    transform: rotateY(180deg);
+    ;
+  }
+  
+  .card:hover{
+    /* 호버시 카드 전체를 뒤집어 줍니다.*/
+    transform: rotateY(180deg);
+  }

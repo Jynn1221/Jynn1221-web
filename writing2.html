@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>새소리</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="writing-style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+
+    <!-- 0. 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md  bg-white navbar-black fixed-top">
+        <div class="container">
+
+            <a class="gaegu-font navbar-brand" href="index.html">
+                <img src="Images/Logo.png" alt="로고">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" target="_self" href="birdlist.html"><h4><strong>새 정보</strong></h4></a></li>
+                    <li class="nav-item "><a class="nav-link" target="_self" href="writinglist.html" style="color:#719C6D"><h3><strong>탐조글</strong></h3></a></li>
+                    <li class="nav-item"><a class="nav-link" target="_self" href="index.html"><h4><strong>홈으로</strong></h4></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- 0. 네비게이션 영역 끝 -->
+
+    <!-- 1. 구분선 배경 영역 시작 -->
+    <section class="overflow-hidden  py-5" id="dividLine2-2">
+        <div class="overflow-hidden">
+            <img src="Images/LineBackground2-2.jpg">
+        </div>
+
+    </section>
+    <!-- 1. 구분선 배경 영역 끝 -->
+
+    
+    
+    <!-- 2. 탐조글 영역 시작 -->
+    <section class="overflow-hidden" id="Writing">
+        <a class="btn" href="birdlist.html" role="button"><h4><strong>&lt; 돌아가기</strong></h4></a>
+
+         <!--탐조글 제목&날짜-->
+         <div class="text-center py-3">
+            <h1 class="display-1 fw-bold mb-5">곤줄박이도 사네요!</h1>
+            <h4 class="fw-light mb-5">2024-02-07</h4>
+            <h1 class="display-1 fw-bold mb-5"> <hr> </h1>
+        </div>
+
+        <!--탐조글 내용1-->
+        <div class="text-center py-3">
+            <h3 class="mb-5 text-center">“ 이 친구는 정말 이른 아침부터 움직이더라고요! ”</h3>
+        </div>
+
+        <!--탐조글 사진-->
+        <div class="text-center py-3">
+            <img src="Images/Write/write2.jpg" class="col-8" alt="Daurian redstart">
+        </div>
+
+        <!--탐조글 내용2-->
+        <div class="text-center py-3">
+            <h3 class="mb-5 text-center">“ "일찍부터 벌레를 잡아먹는 친구라서 그런가 깃털 빛깔도 아주 반지르르르~~ 너무 예뻐요! 진짜 손질 잘한 슈트를 입고 있는 것 같아요^^ ”</h3>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="container d-flex">
+              <img src="Images/heart1_icon.svg" alt="Image description" class="img-fluid">
+            </div>
+        </div>
+
+    </section>
+    <!-- 2. 탐조글 영역 끝 -->
+
+    <!--3. 작성자 영역 시작-->
+    <section class="overflow-hidden" id="user1">
+        <h1 class="display-1 fw-bold mb-5"> <hr> </h1>
+
+        <div class="container justify-content-center">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="justify-content-center d-flex flex-column">
+                    <!--프로필-->
+                    <p class="fw-light">어나더</p>
+                    <img src="Images/Write/user2.png" alt="user1" class="col-3 img-fluid rounded-circle">
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="d-flex flex-column align-items-start">
+                    <!--등급&자기소개-->
+                    <button type="button" class="btn rounded-pill mb-3" style="background-color: #705434; color: white;">
+                        중급탐조인
+                    </button>
+                    <p class="fw-light">탐조 취미가 제 새로운 삶이 되었네요. 다른 탐조인분들과 함께 소통하고 싶습니다!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <h1 class="display-1 fw-bold mb-5"> <hr> </h1>
+    </section>
+    <!--3. 작성자 영역 끝-->
+
+
+    <!--댓글창 영역 시작-->
+    <section class="mb-5">
+        <div class="card bg-light">
+            <div class="card-body">
+                <!-- 댓글-->
+                <form class="mb-4"><textarea class="form-control" rows="3" placeholder="여기에 댓글을 작성해보세요!"></textarea></form>
+                
+                <div class="d-flex mb-4">
+                    <!-- 댓글1-->
+                    <div class="flex-shrink-0"><img class="rounded-circle" src="Images/Write/user2.png" alt="..."></div>
+                    <div class="ms-3">
+                        <div class="fw-bold">어나더</div>
+                        곤줄박이 너무 귀엽네요ㅎㅎㅎ
+                        <!--대댓글1-->
+                        <div class="d-flex mt-4">
+                            <div class="flex-shrink-0"><img class="rounded-circle" src="Images/Write/user7.png" alt="..."></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">체리체리</div>
+                                맞아요 너무 귀여워요!!
+                            </div>
+                        </div>
+                        <!--대댓글2-->
+                        <div class="d-flex mt-4">
+                            <div class="flex-shrink-0"><img class="rounded-circle" src="Images/Write/user6.png" alt="..."></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">바다속에서</div>
+                                저는 오늘 곤줄박이 한가족을 만났어요! 역시 귀엽더군요
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 댓글2-->
+                <div class="d-flex">
+                    <div class="flex-shrink-0"><img class="rounded-circle" src="Images/Write/user10.png" alt="..."></div>
+                    <div class="ms-3">
+                        <div class="fw-bold">뱁새는 짱 귀여워</div>
+                        저도 몰랐는데 집 근처에 곤줄박이 살더라고요
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+
+
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2023 Designed by 이예진 <a
+                    href="https://www.codethem.co.kr/" target="_blank"
+                    class="link-warning text-decoration-none">새소리</a></p>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+</html>

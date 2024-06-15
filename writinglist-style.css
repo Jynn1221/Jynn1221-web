@@ -1,0 +1,51 @@
+body {  font-family: 'Noto Sans KR', 'Gaegu';   }
+
+/* 폰트 */
+h1 {  font-family: 'Gaegu', bold; color:#705434   }
+h2 {  font-family: 'Gaegu', bold;   }
+h3 {  font-family: 'Gaegu', bold;   }
+h4 {  font-family: 'Gaegu', bold;   }
+
+/* 0. 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #719C6D !important;
+    
+}
+
+/* 1. 헤더 영역 */
+
+/* 2. 검색바 영역 */
+
+/* 3. 탐조글 영역 */
+#Wirtinglist{
+    background-image: url(Images/ListBackground2.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+.card { box-shadow: 10 30px 30px rgb(0, 0, 0);   }
+
+.img-wrapper {
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.img-wrapper img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+}
+
+.img-wrapper img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}

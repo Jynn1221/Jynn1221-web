@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>새소리</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="index-style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+
+    <!-- 0. 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md  bg-white navbar-black fixed-top">
+        <div class="container">
+
+            <a class="gaegu-font navbar-brand" href="#home">
+                <img src="Images/Logo.png" alt="로고">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" target="_self" href="birdlist.html"><h4><strong>새 정보</strong></h4></a></li>
+                    <li class="nav-item"><a class="nav-link" target="_self" href="writinglist.html"><h4><strong>탐조글</strong></h4></a></li>
+                    <li class="nav-item"><a class="nav-link" target="_self" href="index.html"><h4><strong>홈으로</strong></h4></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- 0. 네비게이션 영역 끝 -->
+
+
+    <!-- 1. 헤더 영역 시작 -->
+    <header id="Homeheader" class="d-flex flex-column justify-content-center align-items-left vh-100 text-white">
+        
+        <h1 class="display-1 fw-bold mb-5">새소리</h1>
+
+        <h4 class="mb-3">탐조를 즐기시는 분이라면 당신이 누구든 좋아요!</h4>
+        <p class="mb-5">우리 같이 새를 좋아하는 마음은 같으니까요</p>
+
+        <h4 class="mb-3">새소리에선 당신이 올려주는 탐조 이야기를 언제나 환영해요</h4>
+        <p class="mb-5">같은 탐조인들끼리 탐조 정보를 공유하고, 내가 찾은 새가 어떤 친구인지 알아갈 수 있어요!</p>
+        
+    </header>
+    <!-- 1. 헤더 영역 끝 -->
+
+
+    <!-- 2. 바로가기 영역 시작 -->
+     <section class="bg-dark py-5" id="Shortcuts">
+        <div class="container text-center text-black">
+            <div class="d-flex justify-content-evenly w-auto m-auto">
+                <a href="#Citybird" class="btn rounded-pill btn-lg"><h4>어떤 새들이 있을까요?</h4></a>
+                <a href="#Birdwatching" class="btn rounded-pill btn-lg"><h4>탐조란 무엇인가요?</h4></a>
+                <a href="#Birdphoto" class="btn rounded-pill btn-lg "><h4>다른 탐조인들은 뭘 찾았나요?</h4></a>
+            </div>
+        </div>
+    </section>
+    <!-- 2. 바로가기 영역 끝 -->
+
+    <!-- 3. 도시새 소개 섹션 시작 -->
+    <section class="overflow-hidden py-5" id="Citybird">
+        <div class="text-center py-3">
+            <h1 class="fw-bold text-white">우리 주변의 도심에서도 볼 수 있는 새들이에요!</h1>
+        </div>
+
+        <div class="justify-content-center row pb-5 gy-4">
+            <!--딱새-->
+            <div class="col-sm-2 col-lg-2">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#DaurianredstartModal" class="btn btn-i">
+                    <div class="img-wrapper">
+                        <img src="Images/Main/main_Daurian redstart.png" class="card-img img-responsive" alt="Image 1">
+                  </div>
+                </button>
+            </div>
+            <!-- 딱새 Modal -->
+            <div class="modal fade" id="DaurianredstartModal" aria-labelledby="DaurianredstartLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-dark fs-5" id="DaurianredstartLabel">도시새 정보</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="Images/1.Daurian redstart/Daurian redstart picture1.jpg" alt="딱새 설명" class="img-fluid">
+                            <p class="text-muted">딱새</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--까치-->
+            <div class="col-sm-2 col-lg-2">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#MagpieModal" class="btn btn-i">
+                    <div class="img-wrapper">
+                        <img src="Images/Main/main_Magpie.png" class="card-img img-responsive" alt="Image 1">
+                  </div>
+                </button>
+            </div>
+            <!-- 까치 Modal -->
+            <div class="modal fade" id="MagpieModal" aria-labelledby="MagpieLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-dark fs-5" id="MagpieLabel">도시새 정보</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="Images/2.Magpie/Magpie picture1.jpg" alt="까치 설명" class="img-fluid">
+                            <p class="text-muted">까치</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--붉은머리오목눈이-->
+            <div class="col-sm-2 col-lg-2">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#Vinous-throatedparrotbillModal" class="btn btn-i">
+                    <div class="img-wrapper">
+                        <img src="Images/Main/main_Vinous-throated parrotbill.png" class="card-img img-responsive" alt="Image 1">
+                  </div>
+                </button>
+            </div>    
+            <!-- 붉은머리오목눈이 Modal -->
+            <div class="modal fade" id="Vinous-throatedparrotbillModal" aria-labelledby="Vinous-throatedparrotbillLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-dark fs-5" id="Vinous-throatedparrotbillLabel">도시새 정보</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="Images/3.Vinous-throated parrotbill/Vinous-throated parrotbill picture1.jpg" alt="붉은머리오목눈이 설명" class="img-fluid">
+                            <p class="text-muted">붉은머리오목눈이</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--직박구리-->
+            <div class="col-sm-2 col-lg-2">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#Brown-earedbulbulModal" class="btn btn-i">
+                    <div class="img-wrapper">
+                        <img src="Images/Main/main_Brown-eared bulbul.png" class="card-img img-responsive" alt="Image 1">
+                  </div>
+                </button>
+            </div>
+            <!-- 직박구리 Modal -->
+            <div class="modal fade" id="Brown-earedbulbulModal" aria-labelledby="Brown-earedbulbulModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-dark fs-5" id="Brown-earedbulbulModalLabel">도시새 정보</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="Images/4.Brown-eared bulbul/Brown-eared bulbul picture1.jpg" alt="직박구리 설명" class="img-fluid">
+                            <p class="text-muted">직박구리</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--검은흰뺨검둥오리-->
+            <div class="col-sm-2 col-lg-2">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#Easternspot-billedduckModal" class="btn btn-i">
+                    <div class="img-wrapper">
+                        <img src="Images/Main/main_Eastern spot-billed duck.png" class="card-img img-responsive" alt="Image 1">
+                  </div>
+                </button>
+            </div>    
+            <!-- 검은흰뺨검둥오리 Modal -->
+            <div class="modal fade" id="Easternspot-billedduckModal" aria-labelledby="Easternspot-billedduckModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-dark fs-5" id="Easternspot-billedduckModalLabel">도시새 정보</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="Images/5.Eastern spot-billed duck/Eastern spot-billed duck picture1.jpg" alt="직박구리 설명" class="img-fluid">
+                            <p class="text-muted">검은흰뺨검둥오리</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    
+    <!-- 4. 탐조란? 섹션 시작 -->
+    <section class="container py-5" id="Birdwatching">
+    
+        <div class="text-center py-5">
+            <h2 class="fw-bold">탐조란?</h2>
+            <p class="lead text-muted">탐조는 야생의 조류를 직접 찾아다니며 관찰하는 것을 말해요!</p>
+        </div>
+
+        <!--쌍안경 이미지-->    
+        <div class="row justify-content-center mb-3">
+            <div class="col-md-5">
+                <img src="Images/Main/binoculars.jpg" alt="쌍안경 이미지" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="justify-content-center row py-10">
+            <div class="col-3">
+                <!--아코디언1-->
+                <div class="accordion-flush" id="accordion1">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="text-center justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h4> 탐조는 어디서 할 수 있을까요?</h4>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                        <div class="text-center accordion-body">
+                            <strong>탐조는 어렵지 않아요!</strong> </br>도시에서도 탐조를 할 수 있어요!</br>집 근처 공원이나 강가에서도 새를 쉽게 관찰할 수 있답니다!
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        
+        
+    
+    </section><!-- 5. 탐조글 섹션 시작 -->
+    <section class="justify-content-center py-5" id="Birdphoto">
+    
+        <div class="text-center py-3">
+            <h1 class="fw-bold">새소리에 올라온 탐조글</h1>
+        </div>
+    
+        <div class="py-5 mb-5">
+            <div class="justify-content-center row py-2 ">
+
+                <!-- 탐조글1 -->
+                <div class="col-2 card-wrapper" id="photo1">
+                    <div class="card" >
+                        <div class="card-front">
+                            <img src="Images/Main/photo1.jpg" class="card-img-top" alt="photo1">  
+                        </div>
+                        <div class="card-back text-white text-center"><h4>'멋쟁이 신사, 까치씨'</h4></div>  
+                    </div>
+                </div>
+
+                <!-- 탐조글2 -->
+                <div class="col-2 card-wrapper" id="photo2">
+                    <div class="card">
+                        <div class="card-front">
+                            <img src="Images/Main/photo2.jpg" class="card-img-top" alt="photo2">  
+                        </div>
+                        <div class="card-back text-white text-center"><h4>'곤줄박이도 사네요!'</h4></div>  
+                    </div>
+                </div>
+                
+                <!-- 탐조글3 -->
+                <div class="col-2">
+                    <div class="card" id="photo3">
+                        <img src="Images/Main/photo3.jpg" class="card-img-top" alt="photo3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-center row py-2 ">
+                <!-- 탐조글4 -->
+                <div class="col-2 card-wrapper" id="photo4">
+                    <div class="card" >
+                        <div class="card-front">
+                            <img src="Images/Main/photo4.jpg" class="card-img-top" alt="photo4">  
+                        </div>
+                        <div class="card-back text-white text-center"><h4>'와 저 솔부엉이 봤어요!!'</h4></div>  
+                    </div>
+                </div>
+
+                <!-- 탐조글5 -->
+                <div class="col-2 card-wrapper" id="photo5">
+                    <div class="card" >
+                        <div class="card-front">
+                            <img src="Images/Main/photo5.jpg" class="card-img-top" alt="photo5">  
+                        </div>
+                        <div class="card-back text-white text-center text-center"><h4>'벚꽃과 참새^^'</h4></div>  
+                    </div>
+                </div>
+                
+                <!-- 탐조글6 -->
+                <div class="col-2">
+                    <div class="card" id="photo6">
+                        <img src="Images/Main/photo6.jpg" class="card-img-top" alt="photo6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-center row py-2 ">
+                <!-- 탐조글7 -->
+                <div class="col-2 card-wrapper" id="photo7">
+                    <div class="card" >
+                        <div class="card-front">
+                            <img src="Images/Main/photo7.jpg" class="card-img-top" alt="photo7">  
+                        </div>
+                        <div class="card-back text-white text-center"><h4>'참 예쁜 딱새에요'</h4></div>  
+                    </div>
+                </div>
+
+                <!-- 탐조글8 -->
+                <div class="col-2 card-wrapper" id="photo8">
+                    <div class="card" >
+                        <div class="card-front">
+                            <img src="Images/Main/photo8.jpg" class="card-img-top" alt="photo8">  
+                        </div>
+                        <div class="card-back text-white text-center"><h4>'딱따구리 사는 숲'</h4></div>  
+                    </div>
+                </div>
+                
+                <!-- 탐조글9 -->
+                <div class="col-2">
+                    <div class="card" id="photo9">
+                        <img src="Images/Main/photo9.jpg" class="card-img-top" alt="photo9">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </section>
+    <!-- 5. 탐조 글 섹션 끝 -->
+    
+    
+
+
+
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2023 Designed by 이예진 <a
+                    href="https://www.codethem.co.kr/" target="_blank"
+                    class="link-warning text-decoration-none">새소리</a></p>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

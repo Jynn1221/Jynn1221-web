@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>새소리</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="birdlist-style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+
+    <!-- 0. 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md  bg-white navbar-black fixed-top">
+        <div class="container">
+
+            <a class="gaegu-font navbar-brand" href="index.html">
+                <img src="Images/Logo.png" alt="로고">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" target="_self" href="birdlist.html"><h4><strong>새 정보</strong></h4></a></li>
+                    <li class="nav-item "><a class="nav-link" target="_self" href="writinglist.html" style="color:#719C6D"><h3><strong>탐조글</strong></h3></a></li>
+                    <li class="nav-item"><a class="nav-link" target="_self" href="index.html"><h4><strong>홈으로</strong></h4></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- 0. 네비게이션 영역 끝 -->
+
+    <!-- 1. 검색바 영역 시작 -->
+    <section class="container py-5" id="Searchbar1">
+  
+        <div class="row justify-content-center py-5 mb-10">
+            <div class="col-md-10">
+                <img src="Images/searchbar2.png" alt="검색바1" class="img-fluid" >
+            </div>
+        </div>
+
+    </section>
+    <!-- 1. 검색바 영역 끝 -->
+
+    <!-- 2. 구분선 배경 영역 시작 -->
+    <section class="" id="dividLine1">
+  
+        <img src="Images/LineBackground2.jpg" alt="구분선" class="img-fluid" >
+
+    </section>
+    <!-- 2. 구분선 배경 영역 끝 -->
+
+    
+    
+
+    <!-- 3. 탐조글 리스트 영역 시작 -->
+    <section class="container overflow-hidden py-5" id="Wirtinglist">
+        <div class="text-center py-3">
+            <h1 class="fw-bold" ><h1><strong>탐조인들의 글</strong></h1>
+        </div>
+
+        <div class="justify-content-center py-5" id="BirdList">
+            <!--(1째줄)-->
+            <div class="justify-content-center row pb-5 gy-4">
+                <!--탐조글1-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing1.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo1.jpg" class="card-img img-responsive" alt="photo1">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>멋쟁이 신사, 까치씨</strong></h3>
+                                <p class="card-text" ><light>2024-01-05</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글2-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing2.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo2.jpg" class="card-img img-responsive" alt="photo2">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>곤줄박이도 사네요!</strong></h3>
+                                <p class="card-text" ><light>2024-02-07</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글3-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing3.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo3.jpg" class="card-img img-responsive" alt="photo3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>직박구리의 홀로서기</strong></h3>
+                                <p class="card-text" ><light>2024-03-01</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--(2째줄)-->
+            <div class="justify-content-center row pb-5 gy-4">
+                <!--탐조글4-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing4.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo4.jpg" class="card-img img-responsive" alt="photo4">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>와 저 솔부엉이 봤어요!!</strong></h3>
+                                <p class="card-text" ><light>2024-03-04</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글5-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing5.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo5.jpg" class="card-img img-responsive" alt="photo5">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>벚꽃과 참새^^</strong></h3>
+                                <p class="card-text" ><light>2024-04-25</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글6-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing6.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo6.jpg" class="card-img img-responsive" alt="photo6">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>까악 까악</strong></h3>
+                                <p class="card-text" ><light>2024-04-29</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--(3째줄)-->
+            <div class="justify-content-center row pb-5 gy-4">
+                <!--탐조글7-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing7.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo7.jpg" class="card-img img-responsive" alt="photo7">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>참 예쁜 딱새에요</strong></h3>
+                                <p class="card-text" ><light>2024-05-02</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글8-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing8.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo8.jpg" class="card-img img-responsive" alt="photo8">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>까마귀 나는 하늘</strong></h3>
+                                <p class="card-text" ><light>2024-05-05</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글9-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing9.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo9.jpg" class="card-img img-responsive" alt="photo9">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>오리 대가족</strong></h3>
+                                <p class="card-text" ><light>2024-05-08</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--(4째줄)-->
+            <div class="justify-content-center row pb-5 gy-4">
+                <!--탐조글10-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing10.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo10.jpg" class="card-img img-responsive" alt="photo10">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>뱁새는 짱 귀여워</strong></h3>
+                                <p class="card-text" ><light>2024-05-16</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글11-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing11.html">
+                        <div class="card shadow-sm p-3">
+                            <div class="img-wrapper">
+                                <img src="Images/Main/photo11.jpg" class="card-img img-responsive" alt="photo11">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title fs-4"><strong>딱따구리 사는 숲</strong></h3>
+                                <p class="card-text" ><light>2024-05-21</light></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--탐조글12-->
+                <div class="col-sm-6 col-lg">
+                    <a href="Writing12.html">
+                        <div class="card shadow-sm p-3">
+                        <div class="img-wrapper">
+                            <img src="Images/Main/photo12.jpg" class="card-img img-responsive" alt="photo12">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4"><strong>아침에 일찍 일어나는 새</strong></h3>
+                            <p class="card-text" ><light>2024-05-29</light></p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </section>
+    <!-- 2. 탐조글 리스트 영역 끝 -->
+
+
+
+
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2023 Designed by 이예진 <a
+                    href="https://www.codethem.co.kr/" target="_blank"
+                    class="link-warning text-decoration-none">새소리</a></p>
+        </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+</html>
